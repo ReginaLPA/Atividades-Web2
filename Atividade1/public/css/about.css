@@ -1,0 +1,87 @@
+body {
+    margin:0;
+    padding:0;
+    background:white;
+    
+       
+}
+#pag{
+    width:1024px;
+    margin-top: 5px;
+    margin: 0 auto;
+}
+#logo{
+    width :200px;
+    height :180px;
+    float:left;
+    background-image : url("../img/fotoMinha.jpg") ;
+   
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color:rgb(255, 32, 218); 
+} 
+
+#banner{
+    width:824px;
+    height: 180px;
+    float:left;
+    background-color:white;
+    
+}
+#titulo{
+    width: 824px;
+    height:180px;
+    float: left;    
+    background-attachment: fixed;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 32, 218); 
+    font-family: cursive;
+    font-size: 20pt;
+    
+    
+}
+
+#menu{
+    width: 624px;
+    height: 520px;
+    float: left;
+    background: rgb(139, 235, 235) ;    
+    background-attachment: fixed;
+    background-size:100%;
+    background-repeat: no-repeat;
+   text-align-last: inherit;
+
+   
+}
+#menu h2{
+    color: rgb(255, 32, 218);
+    text-indent: 20px;  
+
+}
+#menu h1{
+    text-align: center;
+}
+#menu h4{
+    text-indent: 20px;
+}
+#menu header h2{
+    text-align: center;
+}
+
+
+#conteudo{
+    width: 400px;
+    height: 520px;
+    float: left;    
+    background-attachment: fixed;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-color:white; 
+    background: rgb(255, 174, 231)  ;
+    
+}
+#conteudo h3{
+    text-indent: 20px;
+
+}

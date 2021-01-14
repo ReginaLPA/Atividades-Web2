@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para inclusão de professores</title>
+</head>
+<body>
+    
+    <h1>Formulário para inclusão de professores</h1>
+    <section>
+        <% if(erros) {%>
+            <ul>
+                <% for (let i =0; i < erros.length; i++) { %>
+                    <li>
+                        <%= erros[i].msg%>
+                    </li>
+                <%}%>
+            </ul>
+        <%}%>
+    </section>
+    <form action="/professor/salvar" method="post">
+        <input type="text" name="nome" placeholder="Digite o nome do professor" value="<%= professor.nome%>"><br><br>
+        <input type="text" name="titulacao" placeholder="Digite o titulo"  value="<%= professor.titulacao%>"><br><br>
+        <input type="text" name="cidade" placeholder="Digite a cidade"  value="<%= professor.cidade%>"><br><br>
+        <input type="date" name='datanascimento'  value="<%= professor.datanascimento%>"><br><br>
+        <input type="submit" value="Enviar">
+    
+    </form>
+</body>
+</html>

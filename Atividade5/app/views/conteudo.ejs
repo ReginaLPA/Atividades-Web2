@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site da disciplina de desenvolvimento Web</title>
+</head>
+<body>
+    <h1>Rota do conteudo</h1>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>Conteúdo</td>
+        
+        </tr>
+         <% for (let i=0; i<conteudo.length; i++){%>
+            <tr>
+                <td><%= conteudo[i].idconteudo %></td>
+                <td><%= conteudo[i].conteudo %></td>
+                
+            </tr>                
+        <% } %>       
+        
+    </table>
+</body>
+</html>

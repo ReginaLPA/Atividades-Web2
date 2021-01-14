@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de formulário</title>
+    <link rel="stylesheet" href="../../public/css/form.css"/>
+    <link rel="stylesheet" href="../../public/css/index.css"/>
+    <link rel="stylesheet" href="../../public/css/modal.css"/>
+   
+   
+    
+    <script></script>
+</head>
+
+<body>
+    <div id="pag">
+     <nav id="menu">
+		<a href="#">CADASTRO</a>
+        <ul>
+           <li> <a href="index.html"> HOME </a></li>           
+            <li> <a href="cadastro.html"> CADASTRO </a></li>
+            <li> <a href="about.html"> SOBRE </a></li>
+        </ul>
+		</nav>
+    <form onsubmit="event.preventDefault();  onFormSubmit()"; id="fcontato" name= "formcadastro" >
+        <fieldset id="usuario"> <legend>Identificação do Usuário</legend>
+            <label for="tname">Nome</label>
+            <input type="text" name= "tname"  class="js-input-name"  id= "tname" placeholder="Nome completo" size="20" maxlength="50" required="required"/><br/><br>
+
+          
+            <label  for="email">Email</label>
+            <input type="email" name="email"  class="js-input-email"  id="email" placeholder="email@gmail.com" size="20" maxlength="80" required="required"/><br/><br>
+        
+            <label for="dtnasc">Data Nascimento</label>
+            <input type="date" name= "dtnasc"  class="js-input-date"  id="dtnasc" required="required"/><br>
+
+            <fieldset id="sexo"><legend>Sexo</legend>
+                <input type="radio" class="sexo" name="tsexo" id="cMasc" checked/><label for="cMasc">Masculino</label><br>
+                <input type="radio"  class="sexo" name="tsexo" id="cFem"><label for="cFem">Feminino</label>
+            </fieldset>
+              
+        </fieldset>
+        
+         
+
+        <fieldset id="endereco"><legend>Endereço do usuário</legend>
+            <label for="rua">Rua</label>
+            <input type="text" name= "rua" id="rua" class="js-input-rua" placeholder="Rua, Av, Trav..."  size="20" maxlength="80" required="required"/><br/><br>
+
+            <label for="num">Número</label>
+            <input type="number" name= "num"  class="js-input-number"  id="num" min="0"  max="99999" required="required"/><br/><br>
+
+            <label for="bairro">Bairo</label>
+            <input type="text" name= "bairro" id="bairro" class="js-input-bairro"  placeholder="Bairo"  size="20" maxlength="30" required="required"/><br/><br>
+
+            <label for="country">País</label>
+            <select id="country" name="country"  class="js-input-pais" required="required">
+                     <option disabled="disabled" selected="selected">Brasil</option>
+            </select>
+           <br><br>
+
+
+            <label for="uf">Estado</label>
+            <select name="uf" required="required">
+                <option value="">Selecione o Estado</option>
+             </select>
+             <input type="hidden" name="state">
+
+            <br><br>
+
+            <label for="uf">Cidade</label>
+            <select name="city" disabled="disabled" required="required">
+                 <option value="">Selecione a Cidade</option>
+            </select>
+          
+        </fieldset>
+       
+           <br><br>
+         <input class="botao" id="btn" type="submit" value="Enviar" >
+
+    </form>
+
+
+
+    <!modal-->
+    <div id="modal" class="hide" >
+    <div class="content">
+        <div class="header">           
+            <a href="#">X</a>
+        </div>
+        <table class='list' id ="emplist">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Data Nasc</th>
+                    <th>Rua</th>
+                    <th>Num</th>
+                    <th>Bairro</th>
+                    <th>Cidade</th>
+                    <th>UF</th>                    
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+
+        </table>
+    </div>
+</div>
+
+   
+    
+
+    <script src="../../public/js/script.js"></script>
+    <script src="../../public/js/form.js"></script>
+
+    <footer>
+        <p>Copyright &copy; 2020 -  Com 💕💕 By Regina Lacerda Pinheiro</p>
+        <a href="https://github.com/ReginaLPA" target="_blank">Github</a>
+	</footer>
+</div>
+</body>
+</html>

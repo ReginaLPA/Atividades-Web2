@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+#page{
+    width:1024px;
+    margin-top: 5px;
+	margin: 0 auto;
+	background-color: rgb(233, 233, 233);
+}
+
+form{
+    width: 500px;
+    margin: auto;
+}
+
+input{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 13pt;
+}
+
+input:hover{
+    background-color:#dddddd;
+}
+
+legend {
+    color:#888888;
+    font-weight:bold;
+    font-size:13pt;
+    font-family: sans-serif;
+}
+
+fieldset {
+    border-color:#cecece;
+    margin:20px;
+}
+
+
+
+input[type=submit]{
+    display: block;
+    background-color: #f1097d;
+    height: 35px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    width: 100px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+/* Footer */
+
+footer{
+	text-align: center;
+	padding: 5px;
+	margin-top: 0px;
+	background-color:#4d4d4d;
+	color: #ffffff;
+}

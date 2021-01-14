@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site da Disciplina de Desenvolvimento Web</title>
+</head>
+<body>
+    <h1>Rota do Professor  </h1>    
+    <section class="intro intro_texto">
+           
+    </section> 
+
+    <section class="paragrafos">
+        <div class="historia historia_texto">
+         
+            <table>
+                <tr>
+                    <td>Id</td>
+                    <td>Nome&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</td>
+                    <td>Titulação&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</td>
+                    <td>Cidade;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp</td>
+                    <td>Data de Nascimento</td>
+                </tr>
+                 <% for (let i=0; i<professores.length; i++){%>
+                    <tr>
+                        <td><%= professores[i].idprofessores %></td>
+                        <td><%= professores[i].nome %></td>
+                        <td><%= professores[i].titulacao %></td>
+                        <td><%= professores[i].cidade %></td>
+                        <td><%= professores[i].datanascimento %></td>
+                    </tr>                
+                <% } %>       
+                
+            </table>
+            <!--
+            <p class="text-center">
+                Ser professor é compartilhar conhecimento, 
+                propagar informação, fazer o outro crescer, mostrar caminhos,<br>
+                dar as mãos, e para isso tudo é necessário criar vínculos, <br>
+                se aproximar e compreender o outro, o que exige amor!
+           </p>
+           <p class="text-center">
+                Todo professor deve se orgulhar do vínculo que cria com seus alunos e <br>
+                do comprometimento com sua missão. É necessário estabelecer uma<br>
+                parceria na qual ambos aprendam e cresçam. 
+            </p>-->
+        </div>
+    </section>
+</body>
+</html>

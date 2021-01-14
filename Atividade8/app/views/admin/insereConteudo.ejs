@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para inclusão de Conteudo</title>
+</head>
+<body>
+    <h1>Formulário para inclusão de Conteudo</h1>
+    <section>
+        <% if(erros) {%>
+            <ul>
+                <% for (let i =0; i < erros.length; i++) { %>
+                    <li>
+                        <%= erros[i].msg%>
+                    </li>
+                <%}%>
+            </ul>
+        <%}%>
+    </section>
+    <form action="/conteudo/salvar" method="post">
+        <label for="conteudo">Digite o conteúdo</label><br><br>
+        <textarea name="conteudo" id="conteudo" cols="30" rows="10" >     
+       </textarea><br><br>
+       
+          
+        
+         <input type="submit" value="Enviar">
+    
+    </form>
+    
+</body>
+</html>

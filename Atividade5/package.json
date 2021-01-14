@@ -1,0 +1,16 @@
+{
+  "name": "sitedsw",
+  "version": "1.0.0",
+  "description": "Site da disciplina Desenvolvimento de Sistemas Web.",
+  "main": "config/app.js",
+  "scripts": {
+    "start": "nodemon config/app.js"
+  },
+  "author": "Regina Lacerda",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
