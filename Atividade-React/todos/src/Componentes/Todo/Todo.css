@@ -1,0 +1,41 @@
+.Todo{
+    width: 60%;
+    margin: 16px auto;
+    border: 1px solid #eee;
+    text-align: center;
+    background-color: beige;
+    font: 700 1.4rem Archivo;  
+     padding: 3.2rem 2rem;
+     display: flex;
+     
+      
+
+}
+
+
+.Todo  strong{    
+    font-size: 1.6rem;
+    display: block;
+    margin-top: 0.4rem;
+    padding:  0 2.5rem;
+    
+    
+}
+.Todo  span{
+    display: block;
+    margin-top: 0.4rem;
+    padding:  0 2.5rem;
+     
+}
+.Todo  > p{
+    display: block;
+    align-items: center;  
+    margin-top: 0.4rem;
+    padding:  0 2rem;
+}
+
+
+
+
+
+
