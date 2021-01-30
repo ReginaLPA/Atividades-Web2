@@ -1,13 +1,17 @@
-import React from 'react';
+import React,{useContext}from 'react';
 import { Link } from 'react-router-dom';
 import Book from "../Book/Book";
 
-const Books =({books,deleteBookHandler})=>{
+import {BooksContext} from '../../context/BooksProvider'
+const Books =()=>{
+
+  const {books,  deleteBookHandler} = useContext(BooksContext);
+
     return (
         <div>
         {books.map((book, index)=>{
               return(
-              <Link to={"/livros/"+ book.id}  key={index} >
+              <Link to={"/livros"}  key={index} >
                 <Book                               
                     image = {book.BookImage}
                     name={book.name}

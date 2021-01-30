@@ -10,8 +10,8 @@ const Book =(props)=>{
             <strong>{props.name}</strong>
             <span>{props.author}</span>
             <p>{props.pages}</p>
-            <p>{props.enchildr}</p>
             <button id="button" onClick={props.click}>Apagar Livro</button> 
+            
         </div>
 
     );

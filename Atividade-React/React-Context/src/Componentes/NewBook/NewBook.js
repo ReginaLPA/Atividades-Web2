@@ -1,6 +1,8 @@
-import React from 'react';
+import React,{useContext} from 'react';
 
-const NewBooks = ({onBookSubmit})=>{
+import {BooksContext} from '../../context/BooksProvider'
+const NewBooks = ()=>{
+    const { onBookSubmit} = useContext(BooksContext);
     return (
         <div>
         <form id="insert-book" onSubmit={onBookSubmit}>   
